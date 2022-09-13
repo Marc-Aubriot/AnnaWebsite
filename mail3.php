@@ -9,7 +9,7 @@ require './vendor/autoload.php';
 
     //nouveau mail objet
     $mail = new PHPMailer;
-
+ 
     //server info
     $mail->isSMTP();
     $mail->Host = 'smtp.hostinger.fr';
