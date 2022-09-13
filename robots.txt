@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://gethumancall.fr/sitemap_index.xml
