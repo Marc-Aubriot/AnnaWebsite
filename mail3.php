@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use Symfony\Component\Dotenv\Dotenv;
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 
 require 'vendor/autoload.php';
