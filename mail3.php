@@ -1,11 +1,11 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use Symfony\Component\Dotenv\Dotenv;
+require './vendor/autoload.php';
 
-$dotenv = new Dotenv\Dotenv(__DIR__);
-$dotenv->load();
+    $dotenv = new Dotenv();
+    $dotenv->load(__DIR__.'/../.env'); 
 
-require 'vendor/autoload.php';
     //nouveau mail objet
     $mail = new PHPMailer;
 
