@@ -1,11 +1,9 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
-use Symfony\Component\Dotenv\Dotenv;
-
 require './vendor/autoload.php';
 
-    $dotenv = new Dotenv();
-    $dotenv->load(__DIR__.'/../.env'); // please update this path for your case
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load(); // please update this path for your case
 
     //nouveau mail objet
     $mail = new PHPMailer;
