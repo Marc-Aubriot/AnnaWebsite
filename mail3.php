@@ -2,8 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 require './vendor/autoload.php';
 
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__);
     $dotenv->load(); // please update this path for your case
+    $dotenv->required(['USERNAME','PASSWORD']);
 
     //nouveau mail objet
     $mail = new PHPMailer;
