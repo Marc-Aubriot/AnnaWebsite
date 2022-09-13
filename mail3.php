@@ -5,7 +5,7 @@ use Symfony\Component\Dotenv\Dotenv;
 require './vendor/autoload.php';
 
     $dotenv = new Dotenv();
-    $dotenv->load(__DIR__.'/.env');
+    $dotenv->load(__DIR__.'/../.env'); // please update this path for your case
 
     //nouveau mail objet
     $mail = new PHPMailer;
