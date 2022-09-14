@@ -330,11 +330,11 @@
                         
           <div class="row">
             <label for="name">Nom: </label>
-            <input type="text" name="name" id="name" placeholder="Votre nom...">
+            <input type="text" name="name" id="name" placeholder="Votre nom..." required>
           </div>
           <div class="row">
             <label for="email">E-mail: </label>
-            <input type="email" name="email" id="email" placeholder="Votre boite mail...">
+            <input type="email" name="email" id="email" placeholder="Votre boite mail..." required>
           </div> 
           <div class="row">
             <label for="subject">Sujet: </label>
@@ -342,11 +342,11 @@
           </div>
           <div class="row mb-5">
             <label for="message">Message: </label>
-            <textarea name="message" id="message"  rows="8" cols="20" placeholder="Votre message..."></textarea>
+            <textarea name="message" id="message"  rows="8" cols="20" placeholder="Votre message..." required></textarea>
           </div>
           <div class="row">
             <div class="text-center">
-              <button class="btn btn-default btn-primary text-center w-50" onclick="checkSubmitForm()" type="submit" id="submitBtn" data-bs-dismiss="modal">Confirmer</button>
+              <button class="btn btn-default btn-primary text-center w-50" type="submit" id="submitBtn" data-bs-dismiss="modal">Confirmer</button>
               <p id="submitText"></p>
             </div>
           </div>
@@ -376,38 +376,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>  
   <script src="./scripts/main.js" defer></script>
-  <!--<script>
-      var form = document.getElementById("my-form");
-      
-      async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-              'Accept': 'application/json'
-          }
-        }).then(response => {
-          if (response.ok) {
-            status.innerHTML = "Thanks for your submission!";
-            form.reset()
-          } else {
-            response.json().then(data => {
-              if (Object.hasOwn(data, 'errors')) {
-                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-              } else {
-                status.innerHTML = "Oops! There was a problem submitting your form"
-              }
-            })
-          }
-        }).catch(error => {
-          status.innerHTML = "Oops! There was a problem submitting your form"
-        });
-      }
-      form.addEventListener("submit", handleSubmit)
-  </script>-->
 
 </body>
 

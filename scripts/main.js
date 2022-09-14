@@ -56,7 +56,6 @@ async function checkSubmitForm(event) {
   const messageForm = document.forms["my-form"]["message"].value;
   const submitBtn = document.getElementById("submitBtn");
   const submitText = document.getElementById("submitText");
-  const url = "mail3.php";
 
   if ( nameForm == "" || emailForm == "" || subjectForm == "" || messageForm == "" ) {
     submitText.innerHTML = "Vous devez remplir tous les champs pour valider le formulaire.";
