@@ -1,21 +1,3 @@
-//client side Nodemailer contact form
-/*const form1 = document.getElementById("contact-form-V2");
-
-const formEvent = form1.addEventListener("submit", (event) => {
-  event.preventDefault();
-  let mail = new FormData(form1);
-  sendMail(mail);
-});
-
-const sendMail = (mail) => {
-  fetch("/send", {
-    method: "post",
-    body: mail,
-  }).then((response) => {
-    return response.json();
-  });
-};*/
-
 //scroll animation
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -61,4 +43,41 @@ mybutton.addEventListener("click", backToTop);
 function backToTop() {
 document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
+}
+
+//bouton submit
+async function checkSubmitForm(event) {
+  event.preventDefault();
+
+  const contactForm = document.getElementById("my-form");
+  const nameForm = document.forms["my-form"]["name"].value;
+  const emailForm = document.forms["my-form"]["email"].value;
+  const subjectForm = document.forms["my-form"]["subject"].value;
+  const messageForm = document.forms["my-form"]["message"].value;
+  const submitBtn = document.getElementById("submitBtn");
+  const submitText = document.getElementById("submitText");
+  const url = "mail3.php";
+
+  if ( nameForm == "" || emailForm == "" || subjectForm == "" || messageForm == "" ) {
+    submitText.innerHTML = "Vous devez remplir tous les champs pour valider le formulaire.";
+    return;
+  };
+
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+
+  })
+  .then(response => {
+    if (response.ok) {
+      submitText.innerHTML = "Merci pour votre message !";
+      contactForm.reset();
+    } else {
+      submitText.innerHTML  = "Oups, un problème est survenu...";
+    }
+  })
+  .catch(error => {
+    submitText.innerHTML  = "Oups, un problème est survenu...";
+  });
+
 }

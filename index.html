@@ -346,7 +346,8 @@
           </div>
           <div class="row">
             <div class="text-center">
-              <button class="btn btn-default btn-primary text-center w-50" type="submit" data-bs-dismiss="modal">Confirmer</button>
+              <button class="btn btn-default btn-primary text-center w-50" onclick="checkSubmitForm()" type="submit" id="submitBtn" data-bs-dismiss="modal">Confirmer</button>
+              <p id="submitText"></p>
             </div>
           </div>
 
@@ -375,7 +376,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>  
   <script src="./scripts/main.js" defer></script>
-  <script>
+  <!--<script>
       var form = document.getElementById("my-form");
       
       async function handleSubmit(event) {
@@ -406,7 +407,7 @@
         });
       }
       form.addEventListener("submit", handleSubmit)
-  </script>
+  </script>-->
 
 </body>
 
