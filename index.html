@@ -292,7 +292,8 @@
     <!-- ADDRESS & MAP -->
     <section id="access" class="reveal row mb-5 p-md-5 rounded mx-auto shadow bgColor3">
       <h3 class="mt-5 text-center">Plan d'accès</h3>
-      <article class="col-lg-6  pt-5">
+      <article class="col-lg-6 mt-5">
+        
         <h4>Adresse et Google Map</h4>
         <p>Rue: 32, rue Etienne Marcel</p>
         <p>Ville: PARIS, 75002</p>
@@ -329,19 +330,19 @@
                         
           <div class="row">
             <label for="name">Nom: </label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" placeholder="Votre nom...">
           </div>
           <div class="row">
             <label for="email">E-mail: </label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" placeholder="Votre boite mail...">
           </div> 
           <div class="row">
             <label for="subject">Sujet: </label>
-            <input type="text" name="subject" id="subject">
+            <input type="text" name="subject" id="subject" placeholder="Le sujet de votre message...">
           </div>
           <div class="row mb-5">
             <label for="message">Message: </label>
-            <textarea name="message" id="message"  rows="8" cols="20"></textarea>
+            <textarea name="message" id="message"  rows="8" cols="20" placeholder="Votre message..."></textarea>
           </div>
           <div class="row">
             <div class="text-center">
@@ -349,6 +350,9 @@
             </div>
           </div>
 
+          <?php if (!empty($msg)) {
+            echo "<h2>$msg</h2>";
+          } ?>
 
         </form>
       </div>
