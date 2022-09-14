@@ -26,15 +26,6 @@
     src: url(./fonts/CraftyGirls.ttf);
 }
 
-/* SAFARI 10+ */
-@media not all and (min-resolution:.001dpcm) { 
-  @media {
-      .safari10 { 
-          image-orientation: none;
-      }
-  }
-}
-
 body {
     background-color: var(--SK-color3);
     color: var(--SK-color4);
