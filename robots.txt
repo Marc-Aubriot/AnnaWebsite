@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /chess/
 
 Sitemap: https://gethumancall.fr/sitemap_index.xml
