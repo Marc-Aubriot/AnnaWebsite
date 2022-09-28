@@ -69,6 +69,12 @@ li:hover {
   font-size: 1.5rem;
 }
 
+.hamburgerBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 /* Main */
 section {
     background-color: var(--SK-color1);
@@ -127,8 +133,8 @@ section {
   font-size: 1.5rem;
 }
 
-.fontSize3 {
-  font-size: 3rem;
+.fontSize2p5 {
+  font-size: 2.5rem;
 }
 
 /* CUSTOM HEIGHT */
