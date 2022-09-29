@@ -71,7 +71,7 @@ li:hover {
 
 .hamburgerBtn {
   position: absolute;
-  top: 0;
+  top: -20px;
   right: 0;
 }
 
@@ -92,7 +92,15 @@ section {
 
 /* Logo img */
 .logoImg {
-  width: 40px;
+  width: 100px;
+}
+
+@media (max-width: 850px) { /* Tablette Breakpoint */
+  .logoImg {
+    width: 60px;
+  }
+
+
 }
 
 /* CUSTOM BG AND FONT COLOR */

@@ -44,27 +44,32 @@
 
 <body class="d-flex flex-column ">
 
+  <!-- HEADER -->
   <header class="header-bg container-fluid shadow">
-    
-      <!-- Navigation -->
       <div class="row justify-content-between">
         <nav class="navbar navbar-expand-xl py-0 h-100" style="min-height: 120px;">
-          <div class="col-12 col-xl-4 mt-4">
-            <a 
-              href="#" 
-              class="navbar-brand ms-5 my-5 fontColor1 fontSize2p5" 
-              title="Logo" 
-            ><img 
-              src="./img/psy2.svg" 
-              class="logoImg fillColor2"
-              title="Psy est une lettre grecque utilisée comme emblême dans le domaine de la psychologie" 
-              alt="Le symbole de la psychologie"
-            >Anna-Rita Ciufici</a> 
-            <p class="ms-5"><i>psychologue, psychothérapeute </i></p>
+
+          
+          <div class="col-2 col-xl-1 ms-xl-5">
+            <!-- LOGO -->
+            <a href="#" class="navbar-brand fontColor1 fontSize2p5" title="Logo" >
+              <img 
+                src="./img/psy2.svg" 
+                class="logoImg fillColor2 "
+                title="Psy est une lettre grecque utilisée comme emblême dans le domaine de la psychologie" 
+                alt="Le symbole de la psychologie"
+              >
+            </a>
+          </div>
+          <div class="col-10 col-xl-4 mt-4">
+            <!-- TITRE -->
+            <h1 class="fontColor1 fw-bold fs-1">Anna-Rita Ciufici</h1>
+            <p class="fontColor1 fw-bold fs-5"><i>psychologue, psychothérapeute </i></p>
+            
           </div>  
 
-
-          <div class="col-12 col-xl-8">
+          <!-- Navigation -->
+          <div class="col-12 col-xl-6">
             <!-- Hamburger menu for small devices -->
             <button
               class="navbar-toggler my-5 me-3 hamburgerBtn"
@@ -102,17 +107,19 @@
               </ul>
             </div>
           </div>
-        </div>
-      </nav>
+
+        </nav>
+      </div>
+      
   </header>
     
   <main class="container-xxl">
     
     <!-- QUOTE Brian Tracy-->
     <blockquote class="reveal my-5 row mx-auto text-center">
-      <h2 class="fst-italic display-6 fontColor3">
-        <span></span>
-        <span>Je</span>
+      <div class="col-12">
+      <h2 class="fst-italic fs-1 fw-bold fontColor3 text-start">
+        <span>"Je</span>
         <span>ne</span>
         <span>suis</span>
         <span>pas</span>
@@ -127,18 +134,18 @@
         <span>je</span>
         <span>choisis</span>
         <span>de</span>
-        <span>devenir.</span>
-        <span></span>
-        <span></span>
+        <span>devenir."</span></h2></div>
+        <div class="col-12 text-end">
+        <h2 class="fst-italic fs-1 fw-bold fontColor3">
         <span>Carl</span>
         <span>Gustav</span>
         <span>Jung</span>
-      </h2>
+      </h2></div>
     </blockquote>
 
     <!-- A PROPOS -->
     <section id="about" class="reveal my-5 row p-md-5 rounded mx-auto shadow" >
-      <h1 class="text-center display-5 mt-5 hidden">Anna-Rita Ciufici, <i>psychologue, psychothérapeute </i></h1>
+      <h3 class="text-center display-5 mt-5 hidden">Anna-Rita Ciufici, <i>psychologue, psychothérapeute </i></h3>
       <div class="py-5 ">
         <img 
           src="./img/photo2.jpg" 
