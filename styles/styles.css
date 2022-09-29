@@ -82,6 +82,14 @@ section {
     background-color: var(--LA-color2);
 }
 
+.slidet1 {
+  min-width: 400px;
+}
+
+.slidet2 {
+  min-width: 300px;
+}
+
 /* Logo img */
 .logoImg {
   width: 40px;
