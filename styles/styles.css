@@ -95,10 +95,18 @@ section {
   width: 100px;
 }
 
-@media (max-width: 850px) { /* Tablette Breakpoint */
+/*@media (max-width: 850px) { 
   .logoImg {
-    width: 60px;
+    width: 80px;
   }
+}*/
+
+.title {
+  font-size: 1.5rem;
+}
+
+.subtitle  {
+  font-size: 0.9rem;
 }
 
 /* CUSTOM BG AND FONT COLOR */
